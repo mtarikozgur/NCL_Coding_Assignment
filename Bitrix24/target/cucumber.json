@@ -1,0 +1,141 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1655421200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "client is on the ncl home page",
+            "match": {
+              "location": "TaskStepDefs.client_is_on_the_ncl_home_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-20T10:53:27.484Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5520640701,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Client filters cruises by destination and price",
+        "description": "",
+        "id": "filters;client-filters-cruises-by-destination-and-price",
+        "after": [
+          {
+            "result": {
+              "duration": 661174900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 35819305400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "a client searches for “Alaska Cruises” on “April, 2021”",
+            "match": {
+              "location": "TaskStepDefs.a_client_searches_for_alaska_cruises_on_april_2021()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9751390601,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "sees a “Price From” on the first displayed cruise",
+            "match": {
+              "location": "TaskStepDefs.sees_a_Price_From_on_the_first_displayed_cruise()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 640143400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the client selects “View Cruise”",
+            "match": {
+              "location": "TaskStepDefs.the_client_selects_View_Cruise()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1432467100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "navigates to “Dates \u0026 Prices” section",
+            "match": {
+              "location": "TaskStepDefs.navigates_to_Dates_Prices_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2079250401,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "at least one Category Meta price should match the advertised price",
+            "match": {
+              "location": "TaskStepDefs.at_least_one_Category_Meta_cell_in_the_grid_price_should_match_the_advertised_price()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tasks"
+          }
+        ]
+      }
+    ],
+    "name": "Filters",
+    "description": "",
+    "id": "filters",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/com/ncl/features/Tasks.feature",
+    "tags": [
+      {
+        "name": "@tasks",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
